@@ -24,6 +24,7 @@
       <a href="#facts">Facts</a>
       <a href="#targets">Targets</a>
       <a href="#progress">Progress</a>
+      <a href="#gallery">Gallery</a>
       <a href="#act" class="pill">Take action</a>
     </nav>
   </header>
@@ -152,6 +153,41 @@
     </div>
   </section>
 
+  <!-- PHOTOS -->
+  <section class="photos-section" id="gallery">
+    <div class="photos-head reveal">
+      <span class="eyebrow">Gallery</span>
+      <h2>Water around the world.</h2>
+      <p>Pictures and stories that show why clean water and sanitation matter. Click any photo to zoom in.</p>
+    </div>
+
+    <div class="photos">
+      <figure class="photo reveal">
+        <img src="https://picsum.photos/id/1018/800/600" alt="Mountain lake">
+        <figcaption>
+          <h3>Photo title one</h3>
+          <p>Write your description here. Tell people where the photo was taken and why it matters.</p>
+        </figcaption>
+      </figure>
+
+      <figure class="photo reveal" style="--d:.1s">
+        <img src="https://picsum.photos/id/1015/800/600" alt="River valley">
+        <figcaption>
+          <h3>Photo title two</h3>
+          <p>Write your description here. Tell people where the photo was taken and why it matters.</p>
+        </figcaption>
+      </figure>
+
+      <figure class="photo reveal" style="--d:.2s">
+        <img src="https://picsum.photos/id/1039/800/600" alt="Waterfall">
+        <figcaption>
+          <h3>Photo title three</h3>
+          <p>Write your description here. Tell people where the photo was taken and why it matters.</p>
+        </figcaption>
+      </figure>
+    </div>
+  </section>
+
   <!-- ACT -->
   <section class="act" id="act">
     <div class="act-head reveal">
@@ -160,7 +196,6 @@
     </div>
     <div class="act-grid">
       <div class="act-card reveal">
-        <div class="icon">💧</div>
         <h3>At home</h3>
         <ul>
           <li>Fix leaking taps and toilets quickly</li>
@@ -169,7 +204,6 @@
         </ul>
       </div>
       <div class="act-card raised reveal" style="--d:.1s">
-        <div class="icon">🌍</div>
         <h3>In your community</h3>
         <ul>
           <li>Join river and beach clean-ups</li>
@@ -178,7 +212,6 @@
         </ul>
       </div>
       <div class="act-card reveal" style="--d:.2s">
-        <div class="icon">📣</div>
         <h3>With your voice</h3>
         <ul>
           <li>Share what you learn about SDG 6</li>
@@ -268,6 +301,22 @@
       });
     }, { threshold: 0.2 });
     document.querySelectorAll('.reveal').forEach(el => io.observe(el));
+
+    // Click a box to zoom it in, click again (or anywhere else / Esc) to close
+    let zoomedEl = null;
+    document.querySelectorAll('.stat, .card, .act-card, .photo').forEach(el => {
+      el.addEventListener('click', (e) => {
+        e.stopPropagation();
+        if (zoomedEl && zoomedEl !== el) zoomedEl.classList.remove('zoomed');
+        el.classList.toggle('zoomed');
+        zoomedEl = el.classList.contains('zoomed') ? el : null;
+      });
+    });
+    function closeZoom() {
+      if (zoomedEl) { zoomedEl.classList.remove('zoomed'); zoomedEl = null; }
+    }
+    document.addEventListener('click', closeZoom);
+    document.addEventListener('keydown', (e) => { if (e.key === 'Escape') closeZoom(); });
   </script>
 </body>
 </html>
