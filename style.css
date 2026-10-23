@@ -1,91 +1,117 @@
-/* Basic Reset & Typography */
+:root {
+  --bg: #0b1d33;
+  --bg-soft: #12294a;
+  --card: #17335a;
+  --accent: #4fa3ff;
+  --accent-soft: #a8d1ff;
+  --text: #e6f1ff;
+  --muted: #8fb0d6;
+}
+
 * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 body {
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-    background-color: #f4f4f9;
-    color: #333;
-    padding: 2rem;
+  font-family: "Segoe UI", system-ui, -apple-system, Helvetica, Arial, sans-serif;
+  background: linear-gradient(160deg, var(--bg) 0%, var(--bg-soft) 100%);
+  background-attachment: fixed;
+  color: var(--text);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
 header {
-    text-align: center;
-    margin-bottom: 2rem;
+  text-align: center;
+  padding: 3rem 1rem 2rem;
 }
 
 header h1 {
-    font-size: 2.5rem;
-    color: #24292e; /* GitHub style dark color */
-    margin-bottom: 0.5rem;
+  font-size: clamp(2rem, 5vw, 3rem);
+  color: var(--accent-soft);
+  letter-spacing: 1px;
 }
 
 header p {
-    color: #586069;
-    font-size: 1.1rem;
+  color: var(--muted);
+  margin-top: 0.5rem;
 }
 
-/* Responsive CSS Grid for Gallery */
-.gallery-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-    gap: 20px;
-    max-width: 1200px;
-    margin: 0 auto;
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 1.25rem;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1rem 1.5rem 3rem;
+  flex: 1;
 }
 
-.gallery-item {
-    overflow: hidden;
-    border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    background: #fff;
-    cursor: pointer;
-    transition: transform 0.2s ease, box-shadow 0.2s ease;
+.gallery figure {
+  background: var(--card);
+  border-radius: 14px;
+  overflow: hidden;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.35);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
 }
 
-.gallery-item:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.15);
+.gallery figure:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 28px rgba(79, 163, 255, 0.3);
 }
 
-.gallery-item img {
-    width: 100%;
-    height: 200px;
-    object-fit: cover;
-    display: block;
+.gallery img {
+  display: block;
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  cursor: zoom-in;
 }
 
-/* Lightbox (Popup overlay) Styles */
+.gallery figcaption {
+  padding: 0.75rem 1rem;
+  font-size: 0.95rem;
+  color: var(--accent-soft);
+}
+
 .lightbox {
-    display: none;
-    position: fixed;
-    z-index: 1000;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.9);
-    justify-content: center;
-    align-items: center;
+  position: fixed;
+  inset: 0;
+  background: rgba(5, 15, 30, 0.92);
+  display: none;
+  align-items: center;
+  justify-content: center;
+  z-index: 100;
+  cursor: zoom-out;
+}
+
+.lightbox.open {
+  display: flex;
 }
 
 .lightbox img {
-    max-width: 90%;
-    max-height: 80%;
-    border-radius: 4px;
-    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.5);
+  max-width: 90vw;
+  max-height: 85vh;
+  border-radius: 10px;
+  box-shadow: 0 0 40px rgba(79, 163, 255, 0.35);
 }
 
-.lightbox-close {
-    position: absolute;
-    top: 20px;
-    right: 30px;
-    color: #fff;
-    font-size: 40px;
-    font-weight: bold;
-    cursor: pointer;
-    user-select: none;
+.lightbox .close {
+  position: absolute;
+  top: 1rem;
+  right: 1.5rem;
+  font-size: 2.5rem;
+  color: var(--accent-soft);
+}
+
+footer {
+  text-align: center;
+  padding: 1.5rem;
+  color: var(--muted);
+  font-size: 0.85rem;
+  border-top: 1px solid rgba(79, 163, 255, 0.2);
 }
