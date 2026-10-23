@@ -1,74 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My GitHub Online Gallery</title>
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My GitHub Online Gallery</title>
-    <!-- Link to your new external style sheet -->
-    <link rel="stylesheet" href="style.css">
-</head>
-
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>My Gallery</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <header>
-        <h1>My Online Gallery</h1>
-        <p>A simple showcase hosted directly on GitHub Pages</p>
-    </header>
+  <header>
+    <h1>My Gallery</h1>
+    <p>A little collection of favorite moments</p>
+  </header>
 
-    <!-- Gallery Grid -->
-    <div class="gallery-container">
-        <!-- Item 1 -->
-        <div class="gallery-item" onclick="openLightbox(this)">
-            <img src="https://picsum.photos" alt="Beautiful Landscape">
-        </div>
-        <!-- Item 2 -->
-        <div class="gallery-item" onclick="openLightbox(this)">
-            <img src="https://picsum.photos" alt="City Skyline">
-        </div>
-        <!-- Item 3 -->
-        <div class="gallery-item" onclick="openLightbox(this)">
-            <img src="https://picsum.photos" alt="Ocean Waves">
-        </div>
-        <!-- Item 4 -->
-        <div class="gallery-item" onclick="openLightbox(this)">
-            <img src="https://picsum.photos" alt="Forest Pathway">
-        </div>
-        <!-- Item 5 -->
-        <div class="gallery-item" onclick="openLightbox(this)">
-            <img src="https://picsum.photos" alt="Mountain Peak">
-        </div>
-        <!-- Item 6 -->
-        <div class="gallery-item" onclick="openLightbox(this)">
-            <img src="https://picsum.photos" alt="Desert Dunes">
-        </div>
-    </div>
+  <main class="gallery">
+    <figure><img src="https://picsum.photos/id/1015/600/400" alt="River valley"><figcaption>River valley</figcaption></figure>
+    <figure><img src="https://picsum.photos/id/1016/600/400" alt="Canyon"><figcaption>Canyon</figcaption></figure>
+    <figure><img src="https://picsum.photos/id/1018/600/400" alt="Mountains"><figcaption>Mountains</figcaption></figure>
+    <figure><img src="https://picsum.photos/id/1019/600/400" alt="Coast"><figcaption>Coast</figcaption></figure>
+    <figure><img src="https://picsum.photos/id/1020/600/400" alt="Bear"><figcaption>Bear</figcaption></figure>
+    <figure><img src="https://picsum.photos/id/1024/600/400" alt="Bird"><figcaption>Bird</figcaption></figure>
+    <figure><img src="https://picsum.photos/id/1035/600/400" alt="Waterfall"><figcaption>Waterfall</figcaption></figure>
+    <figure><img src="https://picsum.photos/id/1039/600/400" alt="Forest falls"><figcaption>Forest falls</figcaption></figure>
+    <figure><img src="https://picsum.photos/id/1043/600/400" alt="Lake"><figcaption>Lake</figcaption></figure>
+  </main>
 
-    <!-- Lightbox Modal -->
-    <div id="lightboxModal" class="lightbox" onclick="closeLightbox()">
-        <span class="lightbox-close">&times;</span>
-        <img id="lightboxImg" src="" alt="Enlarged view">
-    </div>
+  <div class="lightbox" id="lightbox">
+    <span class="close" id="close">&times;</span>
+    <img id="lightbox-img" src="" alt="">
+  </div>
 
-    <!-- Lightbox Logic -->
-    <script>
-        function openLightbox(element) {
-            const modal = document.getElementById("lightboxModal");
-            const lightboxImg = document.getElementById("lightboxImg");
-            const clickedImgSrc = element.querySelector("img").src;
-            
-            lightboxImg.src = clickedImgSrc;
-            modal.style.display = "flex";
-        }
+  <footer>
+    <p>&copy; 2026 My Gallery</p>
+  </footer>
 
-        function closeLightbox() {
-            document.getElementById("lightboxModal").style.display = "none";
-        }
-    </script>
+  <script>
+    const lightbox = document.getElementById('lightbox');
+    const lightboxImg = document.getElementById('lightbox-img');
+
+    document.querySelectorAll('.gallery img').forEach(img => {
+      img.addEventListener('click', () => {
+        lightboxImg.src = img.src;
+        lightboxImg.alt = img.alt;
+        lightbox.classList.add('open');
+      });
+    });
+
+    lightbox.addEventListener('click', () => lightbox.classList.remove('open'));
+    document.addEventListener('keydown', e => {
+      if (e.key === 'Escape') lightbox.classList.remove('open');
+    });
+  </script>
 
 </body>
 </html>
