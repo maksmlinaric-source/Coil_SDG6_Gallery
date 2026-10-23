@@ -3,54 +3,271 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>My Gallery</title>
+  <title>SDG 6 · Clean Water and Sanitation for All</title>
+  <meta name="description" content="Explore Sustainable Development Goal 6: ensuring availability and sustainable management of water and sanitation for all by 2030.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Outfit:wght@300;500;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <header>
-    <h1>My Gallery</h1>
-    <p>A little collection of favorite moments</p>
+  <!-- NAVIGATION -->
+  <header class="nav" id="nav">
+    <a href="#top" class="brand">
+      <svg viewBox="0 0 24 24" width="26" height="26" aria-hidden="true"><path fill="currentColor" d="M12 2C12 2 5 10.2 5 15a7 7 0 0 0 14 0C19 10.2 12 2 12 2z"/></svg>
+      <span>SDG<b>6</b></span>
+    </a>
+    <button class="burger" id="burger" aria-label="Open menu" aria-expanded="false"><span></span><span></span><span></span></button>
+    <nav class="links" id="links">
+      <a href="#overview">Overview</a>
+      <a href="#facts">Facts</a>
+      <a href="#targets">Targets</a>
+      <a href="#progress">Progress</a>
+      <a href="#act" class="pill">Take action</a>
+    </nav>
   </header>
 
-  <main class="gallery">
-    <figure><img src="https://picsum.photos/id/1015/600/400" alt="River valley"><figcaption>River valley</figcaption></figure>
-    <figure><img src="https://picsum.photos/id/1016/600/400" alt="Canyon"><figcaption>Canyon</figcaption></figure>
-    <figure><img src="https://picsum.photos/id/1018/600/400" alt="Mountains"><figcaption>Mountains</figcaption></figure>
-    <figure><img src="https://picsum.photos/id/1019/600/400" alt="Coast"><figcaption>Coast</figcaption></figure>
-    <figure><img src="https://picsum.photos/id/1020/600/400" alt="Bear"><figcaption>Bear</figcaption></figure>
-    <figure><img src="https://picsum.photos/id/1024/600/400" alt="Bird"><figcaption>Bird</figcaption></figure>
-    <figure><img src="https://picsum.photos/id/1035/600/400" alt="Waterfall"><figcaption>Waterfall</figcaption></figure>
-    <figure><img src="https://picsum.photos/id/1039/600/400" alt="Forest falls"><figcaption>Forest falls</figcaption></figure>
-    <figure><img src="https://picsum.photos/id/1043/600/400" alt="Lake"><figcaption>Lake</figcaption></figure>
-  </main>
+  <!-- HERO -->
+  <section class="hero" id="top">
+    <div class="bubbles" id="bubbles" aria-hidden="true"></div>
+    <div class="hero-inner">
+      <div class="hero-text">
+        <span class="badge">Sustainable Development Goal 6</span>
+        <h1>Clean water and sanitation <em>for everyone.</em></h1>
+        <p>Water is the foundation of health, dignity and opportunity. Goal 6 calls on the world to ensure safe water, sanitation and hygiene for all people by 2030.</p>
+        <div class="hero-actions">
+          <a href="#facts" class="btn primary">See the facts</a>
+          <a href="#targets" class="btn ghost">Explore the targets</a>
+        </div>
+      </div>
+      <div class="hero-art" aria-hidden="true">
+        <div class="ring ring-1"></div>
+        <div class="ring ring-2"></div>
+        <div class="orb"><span>6</span></div>
+        <div class="chip chip-a">Clean water</div>
+        <div class="chip chip-b">Sanitation</div>
+        <div class="chip chip-c">Hygiene</div>
+      </div>
+    </div>
+    <svg class="waves" viewBox="0 0 1440 160" preserveAspectRatio="none" aria-hidden="true">
+      <path class="w1" d="M0,80 C240,140 480,20 720,80 C960,140 1200,20 1440,80 C1680,140 1920,20 2160,80 C2400,140 2640,20 2880,80 L2880,160 L0,160 Z"/>
+      <path class="w2" d="M0,100 C240,40 480,150 720,100 C960,40 1200,150 1440,100 C1680,40 1920,150 2160,100 C2400,40 2640,150 2880,100 L2880,160 L0,160 Z"/>
+    </svg>
+  </section>
 
-  <div class="lightbox" id="lightbox">
-    <span class="close" id="close">&times;</span>
-    <img id="lightbox-img" src="" alt="">
-  </div>
+  <!-- STATS (overlaps hero) -->
+  <section class="stats" id="facts">
+    <div class="stat reveal">
+      <div class="num"><span class="count" data-target="2.1" data-decimals="1">0</span><small>billion</small></div>
+      <p>people still lack safely managed drinking water</p>
+    </div>
+    <div class="stat reveal" style="--d:.1s">
+      <div class="num"><span class="count" data-target="3.4" data-decimals="1">0</span><small>billion</small></div>
+      <p>people still lack safely managed sanitation</p>
+    </div>
+    <div class="stat reveal" style="--d:.2s">
+      <div class="num"><span class="count" data-target="1.7" data-decimals="1">0</span><small>billion</small></div>
+      <p>people still lack basic hygiene services at home</p>
+    </div>
+    <div class="stat reveal" style="--d:.3s">
+      <div class="num"><span class="count" data-target="354" data-decimals="0">0</span><small>million</small></div>
+      <p>people still practice open defecation</p>
+    </div>
+    <p class="source">Figures for 2024 · WHO/UNICEF Joint Monitoring Programme (JMP), 2025 report</p>
+  </section>
+
+  <!-- OVERVIEW -->
+  <section class="overview" id="overview">
+    <div class="overview-head reveal">
+      <span class="eyebrow">Overview</span>
+      <h2>Water is life. Access to it should not be a privilege.</h2>
+    </div>
+    <div class="overview-body">
+      <div class="reveal">
+        <p class="lead">SDG 6 is one of the 17 Sustainable Development Goals adopted by all UN member states in 2015. Its aim is to ensure availability and sustainable management of water and sanitation for all.</p>
+        <p>Safe water keeps children in school, protects communities from disease and gives people time back for work and education. Clean water also supports food production, energy, healthy ecosystems and resilience to climate change.</p>
+        <div class="deadline">
+          <strong>2030</strong>
+          <span>The year the world has committed to reach universal access to safe water, sanitation and hygiene.</span>
+        </div>
+      </div>
+
+      <div class="ladder reveal" style="--d:.15s">
+        <h3>The drinking water ladder</h3>
+        <ol>
+          <li class="step s5"><b>Safely managed</b><span>On premises, available when needed, free from contamination</span></li>
+          <li class="step s4"><b>Basic</b><span>An improved source within a 30-minute round trip</span></li>
+          <li class="step s3"><b>Limited</b><span>An improved source, but it takes longer than 30 minutes</span></li>
+          <li class="step s2"><b>Unimproved</b><span>Unprotected wells and springs</span></li>
+          <li class="step s1"><b>Surface water</b><span>Rivers, ponds, canals and lakes</span></li>
+        </ol>
+      </div>
+    </div>
+  </section>
+
+  <!-- TARGETS -->
+  <section class="targets" id="targets">
+    <div class="targets-head reveal">
+      <span class="eyebrow light">The targets</span>
+      <h2>Eight targets. One clear promise.</h2>
+      <p>Goal 6 is broken down into measurable targets that cover every part of the water cycle, from the tap to the toilet to the river.</p>
+    </div>
+
+    <div class="grid">
+      <article class="card reveal"><span class="tag">6.1</span><h3>Safe drinking water</h3><p>Universal and equitable access to safe and affordable drinking water for all.</p></article>
+      <article class="card reveal" style="--d:.08s"><span class="tag">6.2</span><h3>Sanitation and hygiene</h3><p>Adequate and equitable sanitation and hygiene for all, and an end to open defecation.</p></article>
+      <article class="card reveal" style="--d:.16s"><span class="tag">6.3</span><h3>Water quality</h3><p>Reduce pollution, eliminate dumping and halve the proportion of untreated wastewater.</p></article>
+      <article class="card reveal"><span class="tag">6.4</span><h3>Water-use efficiency</h3><p>Use water more efficiently in every sector and tackle water scarcity.</p></article>
+      <article class="card reveal" style="--d:.08s"><span class="tag">6.5</span><h3>Integrated management</h3><p>Manage water resources in an integrated way, including across national borders.</p></article>
+      <article class="card reveal" style="--d:.16s"><span class="tag">6.6</span><h3>Water ecosystems</h3><p>Protect and restore mountains, forests, wetlands, rivers, aquifers and lakes.</p></article>
+      <article class="card wide reveal"><span class="tag alt">6.a</span><h3>International cooperation</h3><p>Expand international support and capacity-building for developing countries in water and sanitation activities.</p></article>
+      <article class="card wide reveal" style="--d:.1s"><span class="tag alt">6.b</span><h3>Local participation</h3><p>Support and strengthen the participation of local communities in improving water and sanitation management.</p></article>
+    </div>
+  </section>
+
+  <!-- PROGRESS -->
+  <section class="progress" id="progress">
+    <div class="progress-copy reveal">
+      <span class="eyebrow">Progress</span>
+      <h2>Real progress, but not fast enough.</h2>
+      <p>Since 2015, hundreds of millions of people have gained safe services, yet the world is off track to reach universal access by 2030. People in fragile contexts and rural areas are most often left behind.</p>
+    </div>
+
+    <div class="bars reveal" style="--d:.15s">
+      <div class="bar-group">
+        <div class="bar-label"><b>Safely managed drinking water</b><span>68% → 74%</span></div>
+        <div class="track"><div class="fill" data-width="74"></div></div>
+        <small>Share of the global population, 2015 to 2024</small>
+      </div>
+      <div class="bar-group">
+        <div class="bar-label"><b>Safely managed sanitation</b><span>48% → 58%</span></div>
+        <div class="track"><div class="fill" data-width="58"></div></div>
+        <small>Share of the global population, 2015 to 2024</small>
+      </div>
+      <div class="mini-stats">
+        <div><strong>961 million</strong><span>people gained safely managed water since 2015</span></div>
+        <div><strong>1.2 billion</strong><span>people gained safely managed sanitation since 2015</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ACT -->
+  <section class="act" id="act">
+    <div class="act-head reveal">
+      <span class="eyebrow">Take action</span>
+      <h2>Everyone can be part of the solution.</h2>
+    </div>
+    <div class="act-grid">
+      <div class="act-card reveal">
+        <div class="icon">💧</div>
+        <h3>At home</h3>
+        <ul>
+          <li>Fix leaking taps and toilets quickly</li>
+          <li>Take shorter showers and turn off the tap while brushing</li>
+          <li>Never flush wipes or pour oil and chemicals down the drain</li>
+        </ul>
+      </div>
+      <div class="act-card raised reveal" style="--d:.1s">
+        <div class="icon">🌍</div>
+        <h3>In your community</h3>
+        <ul>
+          <li>Join river and beach clean-ups</li>
+          <li>Support local water-protection projects</li>
+          <li>Talk with friends and school about water issues</li>
+        </ul>
+      </div>
+      <div class="act-card reveal" style="--d:.2s">
+        <div class="icon">📣</div>
+        <h3>With your voice</h3>
+        <ul>
+          <li>Share what you learn about SDG 6</li>
+          <li>Support organizations working on WASH</li>
+          <li>Ask leaders to invest in water and sanitation</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="cta reveal">
+      <h3>Learn more from the official sources</h3>
+      <div class="cta-links">
+        <a class="btn primary" href="https://sdgs.un.org/goals/goal6" target="_blank" rel="noopener">UN SDG 6 page</a>
+        <a class="btn ghost-dark" href="https://washdata.org" target="_blank" rel="noopener">WHO/UNICEF JMP data</a>
+      </div>
+    </div>
+  </section>
 
   <footer>
-    <p>&copy; 2026 My Gallery</p>
+    <div class="foot-inner">
+      <div class="brand light">
+        <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path fill="currentColor" d="M12 2C12 2 5 10.2 5 15a7 7 0 0 0 14 0C19 10.2 12 2 12 2z"/></svg>
+        <span>SDG<b>6</b></span>
+      </div>
+      <p>Clean Water and Sanitation · Ensure availability and sustainable management of water and sanitation for all.</p>
+      <small>Statistics: WHO/UNICEF Joint Monitoring Programme, “Progress on household drinking water, sanitation and hygiene 2000–2024”.</small>
+    </div>
   </footer>
 
   <script>
-    const lightbox = document.getElementById('lightbox');
-    const lightboxImg = document.getElementById('lightbox-img');
+    // Mobile menu
+    const burger = document.getElementById('burger');
+    const links = document.getElementById('links');
+    burger.addEventListener('click', () => {
+      const open = links.classList.toggle('open');
+      burger.classList.toggle('active', open);
+      burger.setAttribute('aria-expanded', open);
+    });
+    links.querySelectorAll('a').forEach(a => a.addEventListener('click', () => {
+      links.classList.remove('open');
+      burger.classList.remove('active');
+      burger.setAttribute('aria-expanded', false);
+    }));
 
-    document.querySelectorAll('.gallery img').forEach(img => {
-      img.addEventListener('click', () => {
-        lightboxImg.src = img.src;
-        lightboxImg.alt = img.alt;
-        lightbox.classList.add('open');
+    // Nav background on scroll
+    const nav = document.getElementById('nav');
+    const onScroll = () => nav.classList.toggle('scrolled', window.scrollY > 40);
+    window.addEventListener('scroll', onScroll, { passive: true });
+    onScroll();
+
+    // Floating bubbles
+    const bubbles = document.getElementById('bubbles');
+    for (let i = 0; i < 22; i++) {
+      const b = document.createElement('span');
+      const size = 6 + Math.random() * 28;
+      b.style.width = b.style.height = size + 'px';
+      b.style.left = Math.random() * 100 + '%';
+      b.style.animationDuration = 9 + Math.random() * 14 + 's';
+      b.style.animationDelay = -Math.random() * 20 + 's';
+      bubbles.appendChild(b);
+    }
+
+    // Count-up numbers
+    function countUp(el) {
+      const target = parseFloat(el.dataset.target);
+      const decimals = parseInt(el.dataset.decimals || 0, 10);
+      const duration = 1800;
+      const start = performance.now();
+      function tick(now) {
+        const p = Math.min((now - start) / duration, 1);
+        const eased = 1 - Math.pow(1 - p, 3);
+        el.textContent = (target * eased).toFixed(decimals);
+        if (p < 1) requestAnimationFrame(tick);
+      }
+      requestAnimationFrame(tick);
+    }
+
+    // Reveal on scroll
+    const io = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (!entry.isIntersecting) return;
+        const el = entry.target;
+        el.classList.add('visible');
+        el.querySelectorAll('.count').forEach(countUp);
+        el.querySelectorAll('.fill').forEach(f => f.style.width = f.dataset.width + '%');
+        io.unobserve(el);
       });
-    });
-
-    lightbox.addEventListener('click', () => lightbox.classList.remove('open'));
-    document.addEventListener('keydown', e => {
-      if (e.key === 'Escape') lightbox.classList.remove('open');
-    });
+    }, { threshold: 0.2 });
+    document.querySelectorAll('.reveal').forEach(el => io.observe(el));
   </script>
-
 </body>
 </html>
