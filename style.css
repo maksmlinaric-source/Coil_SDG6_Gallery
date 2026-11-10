@@ -560,13 +560,41 @@ footer small { font-size: .8rem; opacity: .7; line-height: 1.5; }
 
 /* ---------- GALLERY VIDEOS ---------- */
 .videos { display: grid; grid-template-columns: repeat(2, 1fr); gap: 1.6rem; margin-top: 3rem; }
-.video { background: var(--white); border-radius: var(--radius); overflow: hidden; box-shadow: var(--shadow); }
-.video .frame { position: relative; aspect-ratio: 16 / 9; background: var(--navy); }
-.video iframe { position: absolute; inset: 0; width: 100%; height: 100%; border: 0; }
+.video {
+  background: var(--white);
+  border-radius: var(--radius);
+  overflow: hidden;
+  box-shadow: var(--shadow);
+  transition: transform .35s ease, box-shadow .35s ease;
+}
+.video:hover { transform: translateY(-6px); }
+.video .frame {
+  position: relative;
+  width: 100%;
+  height: 230px;
+  aspect-ratio: auto;
+  overflow: hidden;
+  background: var(--navy);
+}
+.video iframe {
+  position: absolute;
+  inset: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
 .video figcaption { padding: 1.3rem 1.5rem 1.7rem; }
 .video h3 { font-size: 1.2rem; margin-bottom: .45rem; }
 .video p { color: var(--muted); font-size: .94rem; line-height: 1.55; }
-@media (max-width: 560px) { .videos { grid-template-columns: 1fr; } }
+
+@media (max-width: 560px) {
+  .videos { grid-template-columns: 1fr; }
+  .video .frame {
+    height: auto;
+    aspect-ratio: 16 / 9;
+  }
+}
 
 /* ---------- OCEAN CLEANUP GAME ---------- */
 .msg { min-height: 1.6rem; margin: .8rem .4rem 0; color: #c6dcf2; font-size: .92rem; text-align: center; }
