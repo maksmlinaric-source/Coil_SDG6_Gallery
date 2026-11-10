@@ -557,3 +557,51 @@ footer small { font-size: .8rem; opacity: .7; line-height: 1.5; }
 .legend i { border-radius: 0; width: 12px; height: 12px; vertical-align: -1px; }
 .legend .clean i { background: #38d9ff; }
 .legend .dirty i { background: #8fdc1e; }
+
+/* ---------- GALLERY VIDEOS ---------- */
+.videos { display: grid; grid-template-columns: repeat(2, 1fr); gap: 1.6rem; margin-top: 3rem; }
+.video { background: var(--white); border-radius: var(--radius); overflow: hidden; box-shadow: var(--shadow); }
+.video .frame { position: relative; aspect-ratio: 16 / 9; background: var(--navy); }
+.video iframe { position: absolute; inset: 0; width: 100%; height: 100%; border: 0; }
+.video figcaption { padding: 1.3rem 1.5rem 1.7rem; }
+.video h3 { font-size: 1.2rem; margin-bottom: .45rem; }
+.video p { color: var(--muted); font-size: .94rem; line-height: 1.55; }
+@media (max-width: 560px) { .videos { grid-template-columns: 1fr; } }
+
+/* ---------- OCEAN CLEANUP GAME ---------- */
+.msg { min-height: 1.6rem; margin: .8rem .4rem 0; color: #c6dcf2; font-size: .92rem; text-align: center; }
+.shop { display: grid; grid-template-columns: repeat(3, 1fr); gap: .8rem; margin-top: .8rem; }
+.shop-card {
+  background: rgba(255,255,255,.07); border: 1px solid rgba(255,255,255,.14);
+  border-radius: 16px; padding: 1rem; color: #c6dcf2;
+  display: flex; flex-direction: column; gap: .55rem;
+}
+.shop-card h4 { font-family: "Outfit", sans-serif; color: var(--white); font-size: 1.05rem; }
+.shop-btn {
+  font: inherit; font-weight: 600; font-size: .9rem; padding: .6rem .8rem; border-radius: 12px; border: 0;
+  cursor: pointer; background: var(--sky); color: var(--navy); text-align: left; transition: transform .15s, opacity .15s;
+}
+.shop-btn:hover:not(:disabled) { transform: translateY(-2px); }
+.shop-btn:disabled { opacity: .4; cursor: not-allowed; }
+.shop-btn.alt { background: #ffe14a; }
+.shop-note { font-size: .82rem; line-height: 1.4; color: #a9c6e4; }
+.don-bar { height: 12px; background: rgba(255,255,255,.12); border-radius: 999px; overflow: hidden; }
+.don-bar div { height: 100%; width: 0; background: linear-gradient(90deg, var(--blue), #8ef0ff); transition: width .4s; }
+.don-row { display: flex; gap: .5rem; }
+.don-row .shop-btn { flex: 1; text-align: center; }
+
+#quiz { overflow-y: auto; gap: .7rem; }
+#quiz-q { font-size: clamp(1.1rem, 2.6vw, 1.6rem); max-width: 560px; }
+.quiz-opts { display: grid; gap: .5rem; width: min(520px, 100%); }
+.quiz-opt {
+  font: inherit; font-weight: 600; padding: .65rem 1rem; border-radius: 12px;
+  border: 1.5px solid rgba(255,255,255,.35); background: rgba(255,255,255,.1);
+  color: var(--white); cursor: pointer; text-align: left;
+}
+.quiz-opt:hover:not(:disabled) { background: rgba(38,189,226,.3); }
+.quiz-opt.right { background: #2e9e4f; border-color: #2e9e4f; }
+.quiz-opt.wrong { background: #c0392b; border-color: #c0392b; }
+.quiz-hint { min-height: 1.3rem; color: #ffe14a; font-size: .92rem; }
+.quiz-actions { display: flex; gap: .6rem; }
+.btn.small { padding: .55rem 1.1rem; font-size: .9rem; }
+@media (max-width: 960px) { .shop { grid-template-columns: 1fr; } }
