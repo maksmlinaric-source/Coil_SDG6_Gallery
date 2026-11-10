@@ -1,0 +1,1103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>SDG 6 · Clean Water and Sanitation for All</title>
+  <meta name="description" content="Explore Sustainable Development Goal 6: ensuring availability and sustainable management of water and sanitation for all by 2030.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Outfit:wght@300;500;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- TOP NAVIGATION -->
+  <header class="nav" id="nav">
+    <a href="#top" class="brand">
+      <svg viewBox="0 0 24 24" width="26" height="26" aria-hidden="true"><path fill="currentColor" d="M12 2C12 2 5 10.2 5 15a7 7 0 0 0 14 0C19 10.2 12 2 12 2z"/></svg>
+      <span>SDG<b>6</b></span>
+    </a>
+    <button class="burger" id="burger" aria-label="Open menu" aria-expanded="false"><span></span><span></span><span></span></button>
+    <nav class="links" id="links">
+      <a href="#overview" data-tab="overview">Overview</a>
+      <a href="#improve" data-tab="improve">Improvements</a>
+      <a href="#progress" data-tab="progress">How far we’ve come</a>
+      <a href="#gallery" data-tab="gallery">Gallery</a>
+      <a href="#game" data-tab="game" class="pill">Minigame</a>
+    </nav>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero" id="top">
+    <div class="bubbles" id="bubbles" aria-hidden="true"></div>
+    <div class="hero-inner">
+      <div class="hero-text">
+        <span class="badge">Sustainable Development Goal 6</span>
+        <h1>Clean water and sanitation <em>for everyone.</em></h1>
+        <p>Water is the foundation of health, dignity and opportunity. Goal 6 calls on the world to ensure safe water, sanitation and hygiene for all people by 2030.</p>
+        <div class="hero-actions">
+          <a href="#overview" class="btn primary" data-tab="overview">Start exploring</a>
+          <a href="#game" class="btn ghost" data-tab="game">Play the minigame</a>
+        </div>
+      </div>
+      <div class="hero-art" aria-hidden="true">
+        <div class="ring ring-1"></div>
+        <div class="ring ring-2"></div>
+        <div class="orb"><span>6</span></div>
+        <div class="chip chip-a">Clean water</div>
+        <div class="chip chip-b">Sanitation</div>
+        <div class="chip chip-c">Hygiene</div>
+      </div>
+    </div>
+    <svg class="waves" viewBox="0 0 1440 160" preserveAspectRatio="none" aria-hidden="true">
+      <path class="w1" d="M0,80 C240,140 480,20 720,80 C960,140 1200,20 1440,80 C1680,140 1920,20 2160,80 C2400,140 2640,20 2880,80 L2880,160 L0,160 Z"/>
+      <path class="w2" d="M0,100 C240,40 480,150 720,100 C960,40 1200,150 1440,100 C1680,40 1920,150 2160,100 C2400,40 2640,150 2880,100 L2880,160 L0,160 Z"/>
+    </svg>
+  </section>
+
+  <main>
+
+    <!-- ============ 1 · OVERVIEW ============ -->
+    <section class="panel active" id="panel-overview">
+
+      <div class="stats" id="facts">
+        <div class="stat reveal">
+          <div class="num"><span class="count" data-target="2.1" data-decimals="1">0</span><small>billion</small></div>
+          <p>people still lack safely managed drinking water</p>
+        </div>
+        <div class="stat reveal" style="--d:.1s">
+          <div class="num"><span class="count" data-target="3.4" data-decimals="1">0</span><small>billion</small></div>
+          <p>people still lack safely managed sanitation</p>
+        </div>
+        <div class="stat reveal" style="--d:.2s">
+          <div class="num"><span class="count" data-target="1.7" data-decimals="1">0</span><small>billion</small></div>
+          <p>people still lack basic hygiene services at home</p>
+        </div>
+        <div class="stat reveal" style="--d:.3s">
+          <div class="num"><span class="count" data-target="354" data-decimals="0">0</span><small>million</small></div>
+          <p>people still practice open defecation</p>
+        </div>
+        <p class="source">Figures for 2024 · WHO/UNICEF Joint Monitoring Programme (JMP), 2025 report</p>
+      </div>
+
+      <div class="overview">
+        <div class="overview-head reveal">
+          <span class="eyebrow">Overview</span>
+          <h2>Water is life. Access to it should not be a privilege.</h2>
+        </div>
+        <div class="overview-body">
+          <div class="reveal">
+            <p class="lead">SDG 6 is one of the 17 Sustainable Development Goals adopted by all UN member states in 2015. Its aim is to ensure availability and sustainable management of water and sanitation for all.</p>
+            <p>Safe water keeps children in school, protects communities from disease and gives people time back for work and education. Clean water also supports food production, energy, healthy ecosystems and resilience to climate change.</p>
+            <div class="deadline">
+              <strong>2030</strong>
+              <span>The year the world has committed to reach universal access to safe water, sanitation and hygiene.</span>
+            </div>
+          </div>
+
+          <div class="ladder reveal" style="--d:.15s">
+            <h3>The drinking water ladder</h3>
+            <ol>
+              <li class="step s5"><b>Safely managed</b><span>On premises, available when needed, free from contamination</span></li>
+              <li class="step s4"><b>Basic</b><span>An improved source within a 30-minute round trip</span></li>
+              <li class="step s3"><b>Limited</b><span>An improved source, but it takes longer than 30 minutes</span></li>
+              <li class="step s2"><b>Unimproved</b><span>Unprotected wells and springs</span></li>
+              <li class="step s1"><b>Surface water</b><span>Rivers, ponds, canals and lakes</span></li>
+            </ol>
+          </div>
+        </div>
+      </div>
+
+      <div class="targets" id="targets">
+        <div class="targets-head reveal">
+          <span class="eyebrow light">The targets</span>
+          <h2>Eight targets. One clear promise.</h2>
+          <p>Goal 6 is broken down into measurable targets that cover every part of the water cycle, from the tap to the toilet to the river.</p>
+        </div>
+
+        <div class="grid">
+          <article class="card reveal"><span class="tag">6.1</span><h3>Safe drinking water</h3><p>Universal and equitable access to safe and affordable drinking water for all.</p></article>
+          <article class="card reveal" style="--d:.08s"><span class="tag">6.2</span><h3>Sanitation and hygiene</h3><p>Adequate and equitable sanitation and hygiene for all, and an end to open defecation.</p></article>
+          <article class="card reveal" style="--d:.16s"><span class="tag">6.3</span><h3>Water quality</h3><p>Reduce pollution, eliminate dumping and halve the proportion of untreated wastewater.</p></article>
+          <article class="card reveal"><span class="tag">6.4</span><h3>Water-use efficiency</h3><p>Use water more efficiently in every sector and tackle water scarcity.</p></article>
+          <article class="card reveal" style="--d:.08s"><span class="tag">6.5</span><h3>Integrated management</h3><p>Manage water resources in an integrated way, including across national borders.</p></article>
+          <article class="card reveal" style="--d:.16s"><span class="tag">6.6</span><h3>Water ecosystems</h3><p>Protect and restore mountains, forests, wetlands, rivers, aquifers and lakes.</p></article>
+          <article class="card wide reveal"><span class="tag alt">6.a</span><h3>International cooperation</h3><p>Expand international support and capacity-building for developing countries in water and sanitation activities.</p></article>
+          <article class="card wide reveal" style="--d:.1s"><span class="tag alt">6.b</span><h3>Local participation</h3><p>Support and strengthen the participation of local communities in improving water and sanitation management.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ 2 · IMPROVEMENTS ============ -->
+    <section class="panel" id="panel-improve">
+
+      <div class="panel-head reveal">
+        <span class="eyebrow">Improvements</span>
+        <h2>How can we improve?</h2>
+        <p>Reaching everyone by 2030 will take action from governments, organizations and ordinary people. Here is where the biggest gaps are, and what each of us can do.</p>
+      </div>
+
+      <div class="priorities">
+        <article class="pcard reveal"><span class="pnum">01</span><h3>Reach those left behind</h3><p>In fragile contexts, safely managed drinking water coverage is 38 percentage points lower than in other countries.</p></article>
+        <article class="pcard reveal" style="--d:.08s"><span class="pnum">02</span><h3>Invest in the least developed countries</h3><p>People there are more than twice as likely to lack basic drinking water and sanitation, and more than three times as likely to lack basic hygiene.</p></article>
+        <article class="pcard reveal" style="--d:.16s"><span class="pnum">03</span><h3>Close the rural and urban gap</h3><p>Rural areas have improved but still lag behind, while drinking water and hygiene coverage in urban areas has stagnated.</p></article>
+        <article class="pcard reveal"><span class="pnum">04</span><h3>End open defecation</h3><p>354 million people still practice it. Toilets that safely contain and treat waste protect health and dignity.</p></article>
+        <article class="pcard reveal" style="--d:.08s"><span class="pnum">05</span><h3>Protect sources and treat wastewater</h3><p>Clean rivers, lakes and aquifers, and treated wastewater, keep drinking water safe for everyone downstream.</p></article>
+        <article class="pcard reveal" style="--d:.16s"><span class="pnum">06</span><h3>Use water wisely</h3><p>Using water more efficiently in homes, farms and industry eases scarcity and protects the supply for everyone.</p></article>
+      </div>
+
+      <div class="act" id="act">
+        <div class="act-head reveal">
+          <span class="eyebrow">Take action</span>
+          <h2>Everyone can be part of the solution.</h2>
+        </div>
+        <div class="act-grid">
+          <div class="act-card reveal">
+            <h3>At home</h3>
+            <ul>
+              <li>Fix leaking taps and toilets quickly</li>
+              <li>Take shorter showers and turn off the tap while brushing</li>
+              <li>Never flush wipes or pour oil and chemicals down the drain</li>
+            </ul>
+          </div>
+          <div class="act-card raised reveal" style="--d:.1s">
+            <h3>In your community</h3>
+            <ul>
+              <li>Join river and beach clean-ups</li>
+              <li>Support local water-protection projects</li>
+              <li>Talk with friends and school about water issues</li>
+            </ul>
+          </div>
+          <div class="act-card reveal" style="--d:.2s">
+            <h3>With your voice</h3>
+            <ul>
+              <li>Share what you learn about SDG 6</li>
+              <li>Support organizations working on WASH</li>
+              <li>Ask leaders to invest in water and sanitation</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="cta reveal">
+          <h3>Learn more from the official sources</h3>
+          <div class="cta-links">
+            <a class="btn primary" href="https://sdgs.un.org/goals/goal6" target="_blank" rel="noopener">UN SDG 6 page</a>
+            <a class="btn ghost-dark" href="https://washdata.org" target="_blank" rel="noopener">WHO/UNICEF JMP data</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ 3 · HOW FAR WE'VE COME ============ -->
+    <section class="panel" id="panel-progress">
+
+      <div class="panel-head reveal">
+        <span class="eyebrow">Progress</span>
+        <h2>How far we’ve come.</h2>
+        <p>Since 2000, billions of people have gained access to safer water and sanitation. That is real progress, and it shows that change is possible.</p>
+      </div>
+
+      <div class="progress" id="progress-bars">
+        <div class="progress-copy reveal">
+          <h3 class="sub">Real progress, but not fast enough.</h3>
+          <p>Since 2015, hundreds of millions of people have gained safe services, yet universal coverage by 2030 looks increasingly out of reach at the current pace. People in fragile contexts and rural areas are most often left behind.</p>
+        </div>
+
+        <div class="bars reveal" style="--d:.15s">
+          <div class="bar-group">
+            <div class="bar-label"><b>Safely managed drinking water</b><span>68% → 74%</span></div>
+            <div class="track"><div class="fill" data-width="74"></div></div>
+            <small>Share of the global population, 2015 to 2024</small>
+          </div>
+          <div class="bar-group">
+            <div class="bar-label"><b>Safely managed sanitation</b><span>48% → 58%</span></div>
+            <div class="track"><div class="fill" data-width="58"></div></div>
+            <small>Share of the global population, 2015 to 2024</small>
+          </div>
+        </div>
+      </div>
+
+      <div class="since">
+        <h3 class="mini-title reveal">Since 2015</h3>
+        <div class="since-grid">
+          <div class="big-stat reveal">
+            <strong>961 million</strong>
+            <p>more people use safely managed drinking water. The number still lacking it fell by 270 million.</p>
+          </div>
+          <div class="big-stat reveal" style="--d:.1s">
+            <strong>1.2 billion</strong>
+            <p>more people use safely managed sanitation. Those without it fell from 3.9 billion to 3.4 billion.</p>
+          </div>
+          <div class="big-stat reveal" style="--d:.2s">
+            <strong>1.5 billion</strong>
+            <p>more people gained basic hygiene services. Those without fell from 2.5 billion to 1.7 billion.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="achievements">
+        <h3 class="mini-title reveal">Milestones we have reached</h3>
+        <div class="ach-grid">
+          <article class="ach reveal">
+            <div class="ach-top"><span class="ach-year">2000</span><span class="ach-check">&#10003;</span></div>
+            <h4>A first global target</h4>
+            <p>The Millennium Development Goals set the first worldwide target: halve the share of people without safe drinking water and basic sanitation by 2015.</p>
+          </article>
+          <article class="ach reveal" style="--d:.08s">
+            <div class="ach-top"><span class="ach-year">2010</span><span class="ach-check">&#10003;</span></div>
+            <h4>A human right</h4>
+            <p>The UN General Assembly recognizes safe and clean drinking water and sanitation as a human right.</p>
+          </article>
+          <article class="ach reveal" style="--d:.16s">
+            <div class="ach-top"><span class="ach-year">2012</span><span class="ach-check">&#10003;</span></div>
+            <h4>Drinking water target met early</h4>
+            <p>UN agencies announce that the world has met the Millennium drinking water target, five years ahead of the 2015 deadline.</p>
+          </article>
+          <article class="ach reveal">
+            <div class="ach-top"><span class="ach-year">2015</span><span class="ach-check">&#10003;</span></div>
+            <h4>Goal 6 is born</h4>
+            <p>All UN member states adopt the 2030 Agenda with a goal just for water and sanitation. At the time, 68% of people used safely managed drinking water and 48% safely managed sanitation.</p>
+          </article>
+          <article class="ach reveal" style="--d:.08s">
+            <div class="ach-top"><span class="ach-year">2023</span><span class="ach-check">&#10003;</span></div>
+            <h4>The UN Water Conference</h4>
+            <p>Governments meet in New York for the first UN conference on water in 46 years and launch the Water Action Agenda of voluntary commitments.</p>
+          </article>
+          <article class="ach reveal" style="--d:.16s">
+            <div class="ach-top"><span class="ach-year">2024</span><span class="ach-check">&#10003;</span></div>
+            <h4>Billions more with safe services</h4>
+            <p>74% of people now use safely managed drinking water and 58% safely managed sanitation. Since 2000, 2.2 billion gained safe water and 2.8 billion safe sanitation.</p>
+          </article>
+        </div>
+        <p class="source">Sources: United Nations; WHO/UNICEF Joint Monitoring Programme (JMP), 2025 report</p>
+      </div>
+    </section>
+
+    <!-- ============ 4 · GALLERY ============ -->
+    <section class="panel" id="panel-gallery">
+      <div class="photos-section">
+        <div class="photos-head reveal">
+          <span class="eyebrow">Gallery</span>
+          <h2>Water around the world.</h2>
+          <p>Pictures and stories that show why clean water and sanitation matter. Click any photo to zoom in.</p>
+        </div>
+
+        <div class="photos">
+          <figure class="photo reveal">
+            <img src="https://picsum.photos/id/1018/800/600" alt="Mountain lake" loading="lazy">
+            <figcaption><h3>Photo title one</h3><p>Write your description here. Tell people where the photo was taken and why it matters.</p></figcaption>
+          </figure>
+          <figure class="photo reveal" style="--d:.1s">
+            <img src="https://picsum.photos/id/1015/800/600" alt="River valley" loading="lazy">
+            <figcaption><h3>Photo title two</h3><p>Write your description here. Tell people where the photo was taken and why it matters.</p></figcaption>
+          </figure>
+          <figure class="photo reveal" style="--d:.2s">
+            <img src="https://picsum.photos/id/1039/800/600" alt="Waterfall" loading="lazy">
+            <figcaption><h3>Photo title three</h3><p>Write your description here. Tell people where the photo was taken and why it matters.</p></figcaption>
+          </figure>
+          <figure class="photo reveal">
+            <img src="https://picsum.photos/id/1043/800/600" alt="Lake" loading="lazy">
+            <figcaption><h3>Photo title four</h3><p>Write your description here. Tell people where the photo was taken and why it matters.</p></figcaption>
+          </figure>
+          <figure class="photo reveal" style="--d:.1s">
+            <img src="https://picsum.photos/id/1035/800/600" alt="Waterfall in a forest" loading="lazy">
+            <figcaption><h3>Photo title five</h3><p>Write your description here. Tell people where the photo was taken and why it matters.</p></figcaption>
+          </figure>
+          <figure class="photo reveal" style="--d:.2s">
+            <img src="https://picsum.photos/id/1016/800/600" alt="Canyon" loading="lazy">
+            <figcaption><h3>Photo title six</h3><p>Write your description here. Tell people where the photo was taken and why it matters.</p></figcaption>
+          </figure>
+          <figure class="photo reveal">
+            <img src="https://picsum.photos/id/1011/800/600" alt="Photo seven" loading="lazy">
+            <figcaption><h3>Photo title seven</h3><p>Write your description here. Tell people where the photo was taken and why it matters.</p></figcaption>
+          </figure>
+          <figure class="photo reveal" style="--d:.1s">
+            <img src="https://picsum.photos/id/1019/800/600" alt="Photo eight" loading="lazy">
+            <figcaption><h3>Photo title eight</h3><p>Write your description here. Tell people where the photo was taken and why it matters.</p></figcaption>
+          </figure>
+          <figure class="photo reveal" style="--d:.2s">
+            <img src="https://picsum.photos/id/1036/800/600" alt="Photo nine" loading="lazy">
+            <figcaption><h3>Photo title nine</h3><p>Write your description here. Tell people where the photo was taken and why it matters.</p></figcaption>
+          </figure>
+          <figure class="photo reveal">
+            <img src="https://picsum.photos/id/1037/800/600" alt="Photo ten" loading="lazy">
+            <figcaption><h3>Photo title ten</h3><p>Write your description here. Tell people where the photo was taken and why it matters.</p></figcaption>
+          </figure>
+          <figure class="photo reveal" style="--d:.1s">
+            <img src="https://picsum.photos/id/1044/800/600" alt="Photo eleven" loading="lazy">
+            <figcaption><h3>Photo title eleven</h3><p>Write your description here. Tell people where the photo was taken and why it matters.</p></figcaption>
+          </figure>
+          <figure class="photo reveal" style="--d:.2s">
+            <img src="https://picsum.photos/id/1050/800/600" alt="Photo twelve" loading="lazy">
+            <figcaption><h3>Photo title twelve</h3><p>Write your description here. Tell people where the photo was taken and why it matters.</p></figcaption>
+          </figure>
+        </div>
+
+        <div class="videos-heading reveal">
+          <span class="eyebrow">Watch & learn</span>
+          <h2>See the impact of clean water.</h2>
+          <p>Short videos that bring the importance of safe water and sanitation to life.</p>
+        </div>
+        <!-- Add each YouTube video's ID in the embed URL below (the part after v= in its link). -->
+        <div class="videos">
+          <figure class="video reveal">
+            <div class="frame">
+              <iframe src="https://www.youtube.com/embed/VIDEO_ID_1" title="Video one" loading="lazy" referrerpolicy="strict-origin-when-cross-origin" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
+            <figcaption><h3>Clean water, healthier communities</h3><p>Discover why access to safe drinking water changes lives.</p></figcaption>
+          </figure>
+          <figure class="video reveal" style="--d:.1s">
+            <div class="frame">
+              <iframe src="https://www.youtube.com/embed/VIDEO_ID_2" title="Video two" loading="lazy" referrerpolicy="strict-origin-when-cross-origin" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
+            <figcaption><h3>Protecting our most vital resource</h3><p>Learn how communities can protect water sources for the future.</p></figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ 5 · MINIGAME ============ -->
+    <section class="panel" id="panel-game">
+      <div class="panel-head reveal">
+        <span class="eyebrow">Minigame</span>
+        <h2>Clean the ocean.</h2>
+        <p>Throw your tool from the boat and pull plastic out of the sea. Sell it, upgrade your gear by answering SDG 6 questions and donate to the Clean Water Fund. The game ends when the whole ocean is clean.</p>
+      </div>
+
+      <div class="game-section reveal">
+        <div class="game-card">
+          <div class="hud">
+            <div>Money<b id="hud-money">$0</b></div>
+            <div>Bag<b id="hud-bag">$0</b></div>
+            <div>Trash left<b id="hud-left">0</b></div>
+          </div>
+
+          <div class="stage">
+            <canvas id="game" width="480" height="270"></canvas>
+
+            <div class="overlay" id="game-overlay">
+              <h3 id="ov-title">Clean the ocean</h3>
+              <p id="ov-text">Click on the sea to throw your tool and pull out plastic. Sell it, upgrade your gear by answering SDG 6 questions and donate to the Clean Water Fund. Clean the whole ocean to win.</p>
+              <button class="btn primary" id="game-start" type="button">Start game</button>
+            </div>
+
+            <div class="overlay quiz hidden" id="quiz">
+              <h3 id="quiz-q"></h3>
+              <div class="quiz-opts" id="quiz-opts"></div>
+              <p class="quiz-hint" id="quiz-hint"></p>
+              <div class="quiz-actions">
+                <button class="btn ghost small" id="quiz-clue" type="button">Use a clue</button>
+                <button class="btn ghost small" id="quiz-cancel" type="button">Cancel</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="msg" id="game-msg">Click on the sea to throw your tool.</div>
+
+          <div class="shop">
+            <div class="shop-card">
+              <h4>Upgrades</h4>
+              <button class="shop-btn" id="btn-range" type="button"></button>
+              <button class="shop-btn" id="btn-cap" type="button"></button>
+              <button class="shop-btn alt" id="btn-tool" type="button"></button>
+              <p class="shop-note" id="tool-info"></p>
+            </div>
+            <div class="shop-card">
+              <h4>Bag and clues</h4>
+              <button class="shop-btn" id="btn-sell" type="button">Sell bag</button>
+              <p class="shop-note" id="clue-info"></p>
+            </div>
+            <div class="shop-card">
+              <h4>Clean Water Fund</h4>
+              <div class="don-bar"><div id="don-fill"></div></div>
+              <p class="shop-note" id="don-text"></p>
+              <div class="don-row">
+                <button class="shop-btn" id="don-10" type="button">Donate $10</button>
+                <button class="shop-btn" id="don-50" type="button">$50</button>
+                <button class="shop-btn" id="don-all" type="button">All</button>
+              </div>
+              <p class="shop-note" id="perks"></p>
+            </div>
+          </div>
+        </div>
+        <p class="game-hint">Tip: click the sea to throw. Press S to sell and Esc to pause. The tiny sparkles are microplastics, you need the Micro-filter for those.</p>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <div class="foot-inner">
+      <div class="brand light">
+        <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path fill="currentColor" d="M12 2C12 2 5 10.2 5 15a7 7 0 0 0 14 0C19 10.2 12 2 12 2z"/></svg>
+        <span>SDG<b>6</b></span>
+      </div>
+      <p>Clean Water and Sanitation · Ensure availability and sustainable management of water and sanitation for all.</p>
+      <small>Statistics: WHO/UNICEF Joint Monitoring Programme, “Progress on household drinking water, sanitation and hygiene 2000–2024”.</small>
+    </div>
+  </footer>
+
+  <script>
+    // ---------- Mobile menu ----------
+    const burger = document.getElementById('burger');
+    const links = document.getElementById('links');
+    burger.addEventListener('click', () => {
+      const open = links.classList.toggle('open');
+      burger.classList.toggle('active', open);
+      burger.setAttribute('aria-expanded', open);
+    });
+    links.querySelectorAll('a').forEach(a => a.addEventListener('click', () => {
+      links.classList.remove('open');
+      burger.classList.remove('active');
+      burger.setAttribute('aria-expanded', false);
+    }));
+
+    // ---------- Nav background on scroll ----------
+    const nav = document.getElementById('nav');
+    const onScroll = () => nav.classList.toggle('scrolled', window.scrollY > 40);
+    window.addEventListener('scroll', onScroll, { passive: true });
+    onScroll();
+
+    // ---------- Floating bubbles ----------
+    const bubbles = document.getElementById('bubbles');
+    for (let i = 0; i < 22; i++) {
+      const b = document.createElement('span');
+      const size = 6 + Math.random() * 28;
+      b.style.width = b.style.height = size + 'px';
+      b.style.left = Math.random() * 100 + '%';
+      b.style.animationDuration = 9 + Math.random() * 14 + 's';
+      b.style.animationDelay = -Math.random() * 20 + 's';
+      bubbles.appendChild(b);
+    }
+
+    // ---------- Count-up numbers ----------
+    function countUp(el) {
+      const target = parseFloat(el.dataset.target);
+      const decimals = parseInt(el.dataset.decimals || 0, 10);
+      const duration = 1800;
+      const start = performance.now();
+      function tick(now) {
+        const p = Math.min((now - start) / duration, 1);
+        const eased = 1 - Math.pow(1 - p, 3);
+        el.textContent = (target * eased).toFixed(decimals);
+        if (p < 1) requestAnimationFrame(tick);
+      }
+      requestAnimationFrame(tick);
+    }
+
+    // ---------- Reveal on scroll ----------
+    const io = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (!entry.isIntersecting) return;
+        const el = entry.target;
+        el.classList.add('visible');
+        el.querySelectorAll('.count').forEach(countUp);
+        el.querySelectorAll('.fill').forEach(f => f.style.width = f.dataset.width + '%');
+        io.unobserve(el);
+      });
+    }, { threshold: 0.2 });
+    document.querySelectorAll('.reveal').forEach(el => io.observe(el));
+
+    // ---------- Click a box to zoom it in (click again, click elsewhere or press Esc to close) ----------
+    let zoomedEl = null;
+    document.querySelectorAll('.stat, .card, .act-card, .photo, .pcard, .big-stat, .ach').forEach(el => {
+      el.addEventListener('click', (e) => {
+        e.stopPropagation();
+        if (zoomedEl && zoomedEl !== el) zoomedEl.classList.remove('zoomed');
+        el.classList.toggle('zoomed');
+        zoomedEl = el.classList.contains('zoomed') ? el : null;
+      });
+    });
+    function closeZoom() {
+      if (zoomedEl) { zoomedEl.classList.remove('zoomed'); zoomedEl = null; }
+    }
+    document.addEventListener('click', closeZoom);
+    document.addEventListener('keydown', (e) => { if (e.key === 'Escape') closeZoom(); });
+
+    // ---------- MINIGAME: Clean the ocean (first person) ----------
+    (function () {
+      const canvas = document.getElementById('game');
+      const ctx = canvas.getContext('2d');
+      ctx.imageSmoothingEnabled = false;
+      const W = 480, H = 270, HOR = 118, Y_NEAR = 214, Y_FAR = 126, HX = W / 2, HY = 240;
+      const $ = id => document.getElementById(id);
+      const overlay = $('game-overlay'), ovTitle = $('ov-title'), ovText = $('ov-text'), startBtn = $('game-start');
+      const quizEl = $('quiz'), quizQ = $('quiz-q'), quizOpts = $('quiz-opts'), quizHint = $('quiz-hint');
+      const quizClue = $('quiz-clue'), quizCancel = $('quiz-cancel');
+      const moneyEl = $('hud-money'), bagEl = $('hud-bag'), leftEl = $('hud-left'), msgEl = $('game-msg');
+      const btnRange = $('btn-range'), btnCap = $('btn-cap'), btnTool = $('btn-tool'), btnSell = $('btn-sell');
+      const toolInfo = $('tool-info'), clueInfo = $('clue-info'), donText = $('don-text'), donFill = $('don-fill'), perksEl = $('perks');
+
+      // ----- balance (change these numbers to make the game easier or harder) -----
+      const TRASH_TOTAL = 90, MICRO_TOTAL = 30, TOTAL = TRASH_TOTAL + MICRO_TOTAL, MAX_ACTIVE = 14;
+      const TOOLS = [
+        { name: 'Hook', r: 16, micro: false, reel: 0.55, col: '#cfd8e3' },
+        { name: 'Net', r: 24, micro: false, reel: 0.5, col: '#e8d9a8' },
+        { name: 'Micro-filter', r: 24, micro: true, reel: 0.5, col: '#6fe0f0' },
+        { name: 'Big net', r: 36, micro: true, reel: 0.42, col: '#f0c35a' },
+        { name: 'Trawl net', r: 48, micro: true, reel: 0.32, col: '#ff9a5a' }
+      ];
+      const RANGE_COST = [20, 35, 55, 80], CAP_COST = [25, 45, 70, 100, 140];
+      const MILESTONES = [
+        { at: 120, key: 'finn', name: 'Finn the dolphin sells your bag for you' },
+        { at: 300, key: 'bless', name: 'Clean Water Blessing: +25% on everything you sell' },
+        { at: 600, key: 'sally', name: 'Sally the turtle pulls out trash for you' }
+      ];
+      const QUIZ = [
+        { q: 'What does SDG 6 aim to ensure for everyone?', a: ['Clean water and sanitation', 'Cheap electricity', 'Faster internet'], h: 'Think about the tap and the toilet.' },
+        { q: 'By which year should SDG 6 be reached?', a: ['2030', '2025', '2050'], h: 'It is the deadline of the whole 2030 Agenda.' },
+        { q: 'Roughly how many people still lack safely managed drinking water?', a: ['2.1 billion', '210 million', '21 million'], h: 'More than two thousand million.' },
+        { q: 'What does WASH stand for?', a: ['Water, Sanitation and Hygiene', 'Waste, Air, Soil and Heat', 'Wells, Aquifers, Seas and Harbours'], h: 'Think of washing your hands.' },
+        { q: 'Microplastics are plastic pieces smaller than about...', a: ['5 millimetres', '5 centimetres', '5 metres'], h: 'Smaller than a pencil eraser.' },
+        { q: 'Which target aims to halve the share of untreated wastewater?', a: ['6.3 Water quality', '6.4 Water-use efficiency', '6.6 Water ecosystems'], h: 'It is about pollution and dumping.' },
+        { q: 'Which sector uses the most freshwater worldwide?', a: ['Agriculture', 'Tourism', 'Mining'], h: 'Think about growing food.' },
+        { q: 'On the drinking water ladder, which is the top rung?', a: ['Safely managed', 'Basic', 'Limited'], h: 'On premises, available when needed and free from contamination.' },
+        { q: 'A basic drinking water source is within a round trip of at most...', a: ['30 minutes', '3 hours', '5 minutes'], h: 'Half an hour.' },
+        { q: 'Target 6.6 protects which of these?', a: ['Wetlands, rivers, lakes and aquifers', 'Highways and bridges', 'Airports'], h: 'Water ecosystems.' },
+        { q: 'How many Sustainable Development Goals are there?', a: ['17', '8', '30'], h: 'Seventeen.' },
+        { q: 'Why should wipes and chemicals never go down the drain?', a: ['They pollute water and block sewers', 'They make water taste better', 'They help clean the pipes'], h: 'Think of what ends up in rivers and the sea.' }
+      ];
+      const facts = [
+        '2.1 billion people still lack safely managed drinking water.',
+        '3.4 billion people still lack safely managed sanitation.',
+        '354 million people still practice open defecation.',
+        'Since 2015, 961 million more people gained safely managed drinking water.',
+        '1.7 billion people still lack basic hygiene services at home.'
+      ];
+
+      // ----- helpers -----
+      const hx = h => [1, 3, 5].map(i => parseInt(h.substr(i, 2), 16));
+      const mx = (a, b, k) => a.map((v, i) => v + (b[i] - v) * k);
+      const css = a => 'rgb(' + a.map(Math.round).join(',') + ')';
+      const cv = (w, h) => { const c = document.createElement('canvas'); c.width = w; c.height = h; return c; };
+      const R = (x, y, w, h, c) => { ctx.fillStyle = c; ctx.fillRect(Math.round(x), Math.round(y), Math.max(1, Math.round(w)), Math.max(1, Math.round(h))); };
+      const clamp = (v, a, b) => Math.max(a, Math.min(b, v));
+      const shuffle = a => { for (let i = a.length - 1; i > 0; i--) { const j = Math.floor(Math.random() * (i + 1)); const tmp = a[i]; a[i] = a[j]; a[j] = tmp; } return a; };
+      function disc(c, cx, cy, r, col) {
+        c.fillStyle = col;
+        for (let dy = -r; dy <= r; dy++) { const w = Math.floor(Math.sqrt(r * r - dy * dy)); c.fillRect(cx - w, cy + dy, 2 * w + 1, 1); }
+      }
+
+      // ----- pixel-art sprites (each trash type has its own drawing) -----
+      const PAL = { k: '#1b2230', w: '#ffffff', l: '#cfd8e3', g: '#8b97a8', c: '#9be8ff', b: '#3fa7e8', B: '#1f6fb5',
+        r: '#e0453d', R: '#9c2a2a', n: '#8a5a33', N: '#5a3820', t: '#c9a06a', s: '#2a2d35', S: '#44485a', G: '#3fa14a', h: '#25702f' };
+      function bake(rows) {
+        const c = cv(rows[0].length, rows.length), x = c.getContext('2d');
+        rows.forEach((row, j) => [...row].forEach((ch, i) => { if (PAL[ch]) { x.fillStyle = PAL[ch]; x.fillRect(i, j, 1, 1); } }));
+        return c;
+      }
+      const BOTTLE = bake(['...kkkk...', '...kbbk...', '...kkkk...', '..kllllk..', '.kwccllllk', '.kwcclllgk', '.kwcclllgk', '.kwBBBBBgk',
+        '.kwBBBBBgk', '.kwcclllgk', '.kwcclllgk', '.kwcclllgk', '..kllllgk.', '...kkkk...']);
+      const CAN = bake(['..kkkkkk..', '.kgggggglk', '.kkkkkkkkk', '.krrrrrrRk', '.krwwwwrRk', '.krrwwrrRk', '.krrrrrrRk', '.kwrrrrrRk',
+        '.kwrrrrrRk', '.krrrrrrRk', '.kkkkkkkkk', '..kgggggk.', '...kkkkk..']);
+      const BAG = bake(['....kk..kk....', '...kwwkkwwk...', '..kwwwwwwwwk..', '.kwwlwwwwlwwk.', '.kwlwwwwwwlwwk', 'kwwwwwwwwwwwwk',
+        'kwllwwwwwwwllk', 'kwwwwwwlwwwwwk', '.kwwwwwwwwwwk.', '.kgwwwwwwwwgk.', '..kggwwwwggk..', '...kkkkkkkk...']);
+      const BOOT = bake(['..kkkkkk......', '..knnnnk......', '..knnnnk......', '..kNnnnk......', '..knnnnk......', '..knnnnkkkk...',
+        '..knnnnnnnnkk.', '.knntnnnnnnnnk', '.knnnnnnnnnnnk', '.kNNNNNNNNNNNk', '.kssssssssssk.', '.kSSSSSSSSSSk.', '..kkkkkkkkkk..']);
+      const TIRE = bake(['....kkkkkk....', '..kkSSSSSSkk..', '.kSSssssssSSk.', '.kSsskkkksssk.', 'kSssk.....kssk', 'ksk.........sk',
+        'ksk.........sk', 'ksk.........sk', 'kSssk.....kssk', '.kSsskkkksssk.', '.kSSssssssSSk.', '..kkSSSSSSkk..', '....kkkkkk....']);
+      const DOLPHIN = bake(['.......kk.....', '......kbbk....', '..kkkkbbbbk...', '.kbbbbbbbbbk..', 'kbbbbbbwwwwbk.', '.kkbbbbwwwbk..', '...kkkkkkkk...']);
+      const TURTLE = bake(['...kkkkkk....', '..khGGGGhk...', '.khGhGGhGhk..', 'khGGhGGhGhktt', '.kkhGGGGhkttk', '..kkk..kkk...']);
+      const TRASH = [{ spr: BOTTLE, v: 8 }, { spr: CAN, v: 6 }, { spr: BAG, v: 7 }, { spr: BOOT, v: 12 }, { spr: TIRE, v: 25 }];
+      const MICRO_COL = ['#ffffff', '#ff9ec7', '#9be8ff', '#a8ff9e', '#ffe08a'];
+
+      // ----- pre-rendered scenery -----
+      function makeSky() {
+        const c = cv(W, HOR), x = c.getContext('2d'), top = hx('#4f9be0'), bot = hx('#d6f1ff'), bands = 15, bh = Math.ceil(HOR / bands);
+        for (let i = 0; i < bands; i++) {
+          const col = css(mx(top, bot, i / (bands - 1)));
+          x.fillStyle = col; x.fillRect(0, i * bh, W, bh);
+          if (i) for (let px = 0; px < W; px += 2) { x.fillRect(px + (i % 2), i * bh - 2, 1, 1); x.fillRect(px + 1 - (i % 2), i * bh - 1, 1, 1); }
+        }
+        for (let r = 40; r >= 18; r -= 4) { x.globalAlpha = 0.07; disc(x, 372, 62, r, '#fff6c8'); }
+        x.globalAlpha = 1; disc(x, 372, 62, 17, '#fff0a0'); disc(x, 372, 62, 13, '#fffbe0');
+        for (let px = 0; px < W; px++) {
+          const h = Math.round(7 + 4 * Math.sin(px * 0.021) + 3 * Math.sin(px * 0.07 + 1) + 2 * Math.sin(px * 0.17));
+          x.fillStyle = '#9dbfdc'; x.fillRect(px, HOR - h, 1, h);
+          x.fillStyle = '#b6d2e8'; x.fillRect(px, HOR - h, 1, 1);
+        }
+        x.fillStyle = 'rgba(225,242,255,.55)'; x.fillRect(0, HOR - 5, W, 5);
+        return c;
+      }
+      function makeCloud(w, h) {
+        const c = cv(w, h), x = c.getContext('2d');
+        [[0.2, 0.68, 0.17], [0.4, 0.48, 0.24], [0.62, 0.5, 0.21], [0.8, 0.68, 0.15], [0.5, 0.72, 0.2]]
+          .forEach(b => disc(x, Math.round(b[0] * w), Math.round(b[1] * h), Math.round(b[2] * w * 0.5), '#ffffff'));
+        x.globalCompositeOperation = 'source-atop';
+        x.fillStyle = 'rgba(150,185,220,.6)'; x.fillRect(0, Math.round(h * 0.68), w, h);
+        x.fillStyle = 'rgba(190,215,240,.5)'; x.fillRect(0, Math.round(h * 0.55), w, Math.round(h * 0.13));
+        return c;
+      }
+      function makeSea() {
+        const SH = H - HOR, c = cv(W + 16, SH), x = c.getContext('2d');
+        const far = hx('#7fd3e6'), mid = hx('#2a8fd0'), near = hx('#0f4f98');
+        for (let y = 0; y < SH; y++) {
+          const k = y / SH;
+          x.fillStyle = css(k < 0.4 ? mx(far, mid, k / 0.4) : mx(mid, near, (k - 0.4) / 0.6));
+          x.fillRect(0, y, W + 16, 1);
+        }
+        let s = 11; const r = () => (s = (s * 16807) % 2147483647) / 2147483647;
+        for (let i = 0; i < 1400; i++) {
+          const y = Math.floor(r() * SH), k = y / SH, len = Math.round(2 + k * 16 * (0.4 + r())), px = Math.floor(r() * (W + 16));
+          x.fillStyle = r() < 0.6 ? 'rgba(255,255,255,' + (0.1 + 0.25 * r()) + ')' : 'rgba(5,40,90,' + (0.12 + 0.2 * r()) + ')';
+          x.fillRect(px, y, len, 1);
+        }
+        return c;
+      }
+      function makeDeck() {
+        const DH = H - 222, c = cv(W, DH), x = c.getContext('2d');
+        x.fillStyle = '#6b4a2b'; x.fillRect(0, 4, W, DH);
+        for (let i = 0; i < 6; i++) { x.fillStyle = '#4a3019'; x.fillRect(0, 4 + i * 8, W, 1); x.fillStyle = '#7f5c36'; x.fillRect(0, 5 + i * 8, W, 1); }
+        x.fillStyle = '#4a3019';
+        for (let i = -9; i <= 9; i++) for (let y = 4; y < DH; y++) x.fillRect(Math.round(W / 2 + i * (22 + 60 * (y - 4) / (DH - 4))), y, 1, 1);
+        let s = 5; const r = () => (s = (s * 16807) % 2147483647) / 2147483647;
+        for (let i = 0; i < 260; i++) {
+          x.fillStyle = r() < 0.5 ? 'rgba(40,24,10,.35)' : 'rgba(255,220,160,.18)';
+          x.fillRect(Math.floor(r() * W), 4 + Math.floor(r() * (DH - 4)), 2 + Math.floor(r() * 6), 1);
+        }
+        x.fillStyle = '#c79a5b'; x.fillRect(0, 0, W, 2); x.fillStyle = '#8b6a3f'; x.fillRect(0, 2, W, 2);
+        return c;
+      }
+      const skyImg = makeSky(), seaTile = makeSea(), deckImg = makeDeck();
+      const clouds = [{ img: makeCloud(96, 34), x: 0, y: 18, v: 3 }, { img: makeCloud(70, 26), x: 200, y: 46, v: 2 }, { img: makeCloud(120, 40), x: 330, y: 8, v: 1.4 }];
+
+      // ----- perspective: depth d (0 = at the boat, 1 = far away) -----
+      const spread = p => 240 - 90 * p;
+      const dToY = d => Y_NEAR + (Y_FAR - Y_NEAR) * Math.pow(d, 0.6);
+      const yToD = y => Math.pow(clamp((y - Y_NEAR) / (Y_FAR - Y_NEAR), 0, 1), 1 / 0.6);
+      function proj(d, lat) {
+        const p = Math.pow(d, 0.6);
+        return { y: Y_NEAR + (Y_FAR - Y_NEAR) * p, x: HX + lat * spread(p), s: d > 0.55 ? 1 : d > 0.18 ? 2 : 3 };
+      }
+
+      // ----- state -----
+      let items = [], pool = [], particles = [], ripples = [], texts = [], anims = [];
+      let money = 0, bagValue = 0, clues = 0, rangeLv = 0, capLv = 0, tier = 0, donated = 0, perks = {};
+      let t = 0, last = 0, spawnT = 0, finnT = 6, sallyT = 3.5, uiT = 0, hook = null, aim = null, qOrder = [], qCur = null;
+      let mode = 'idle'; // idle | running | paused | quiz | over
+      const range = () => 36 + 14 * rangeLv;
+      const capacity = () => 1 + capLv;
+      const mult = () => (perks.bless ? 1.25 : 1);
+      const remaining = () => pool.length + items.length + (hook ? hook.caught.length : 0);
+      const say = s => { msgEl.textContent = s; };
+
+      function buildPool() {
+        const p = [];
+        for (let i = 0; i < TRASH_TOTAL; i++) { const r = Math.random(); p.push({ k: r < 0.3 ? 0 : r < 0.55 ? 1 : r < 0.75 ? 2 : r < 0.9 ? 3 : 4 }); }
+        for (let i = 0; i < MICRO_TOTAL; i++) p.push({ micro: true });
+        return shuffle(p);
+      }
+      function spawnItem(def) {
+        const it = { micro: !!def.micro, d: (def.micro ? 0.3 : 0.55) + Math.random() * 0.45, lat: (Math.random() * 2 - 1) * 0.9,
+          vx: (Math.random() - 0.5) * 0.05, ph: Math.random() * 6 };
+        if (it.micro) {
+          it.v = 4; it.pts = [];
+          for (let i = 0; i < 7; i++) it.pts.push([Math.round((Math.random() - 0.5) * 14), Math.round((Math.random() - 0.5) * 6), Math.random() < 0.3 ? 2 : 1, MICRO_COL[i % 5]]);
+        } else { const T = TRASH[def.k]; it.spr = T.spr; it.v = T.v; }
+        items.push(it);
+      }
+      function reset() {
+        items = []; particles = []; ripples = []; texts = []; anims = []; hook = null; qOrder = [];
+        pool = buildPool();
+        money = 0; bagValue = 0; clues = 0; rangeLv = 0; capLv = 0; tier = 0; donated = 0; perks = {};
+        spawnT = 0.5; finnT = 6; sallyT = 3.5; uiT = 0;
+        for (let i = 0; i < 8; i++) spawnItem(pool.pop());
+        say('Click on the sea to throw your tool.');
+        ui();
+      }
+
+      // ----- user interface (shop, HUD) -----
+      function ui() {
+        moneyEl.textContent = '$' + money; bagEl.textContent = '$' + bagValue; leftEl.textContent = remaining();
+        const rc = RANGE_COST[rangeLv], cc = CAP_COST[capLv];
+        btnRange.textContent = rc ? 'Throw range ' + range() + ' m → ' + (range() + 14) + ' m · $' + rc : 'Throw range: max (' + range() + ' m)';
+        btnRange.disabled = !rc || money < rc;
+        btnCap.textContent = cc ? 'Catch at once ' + capacity() + ' → ' + (capacity() + 1) + ' · $' + cc : 'Catch at once: max (' + capacity() + ')';
+        btnCap.disabled = !cc || money < cc;
+        btnTool.textContent = tier < TOOLS.length - 1 ? 'Upgrade tool: answer a question' : 'All tools unlocked';
+        btnTool.disabled = tier >= TOOLS.length - 1;
+        toolInfo.textContent = 'Tool: ' + TOOLS[tier].name + (TOOLS[tier].micro ? ' (catches microplastics)' : '') + (tier < TOOLS.length - 1 ? '. Next: ' + TOOLS[tier + 1].name + '.' : '.');
+        btnSell.textContent = 'Sell bag ($' + Math.round(bagValue * mult()) + ')';
+        btnSell.disabled = bagValue <= 0;
+        clueInfo.textContent = 'Clues: ' + clues + '. You sometimes find one while pulling out trash. Use them in the quiz.';
+        const next = MILESTONES.find(m => donated < m.at), prev = MILESTONES.filter(m => donated >= m.at).pop();
+        donText.textContent = next ? 'Donated $' + donated + '. Next reward at $' + next.at + ': ' + next.name + '.' : 'Donated $' + donated + '. All rewards unlocked!';
+        donFill.style.width = (next ? (donated - (prev ? prev.at : 0)) / (next.at - (prev ? prev.at : 0)) * 100 : 100) + '%';
+        perksEl.textContent = MILESTONES.filter(m => perks[m.key]).map(m => '✓ ' + m.name).join('  ');
+        $('don-10').disabled = money < 10; $('don-50').disabled = money < 50; $('don-all').disabled = money < 1;
+      }
+      function sell(auto) {
+        if (mode !== 'running' || bagValue <= 0) return;
+        const gain = Math.round(bagValue * mult());
+        money += gain; bagValue = 0;
+        texts.push({ x: HX - 20, y: 205, life: 1.1, s: '+$' + gain, c: '#ffe14a' });
+        say(auto ? 'Finn sold your bag for $' + gain + '!' : 'Sold for $' + gain + '.');
+        ui();
+      }
+      function donate(amount) {
+        if (mode !== 'running') return;
+        amount = Math.min(amount, money);
+        if (amount <= 0) return;
+        money -= amount; donated += amount;
+        MILESTONES.forEach(m => {
+          if (donated >= m.at && !perks[m.key]) {
+            perks[m.key] = true;
+            say('Thank you! Reward unlocked: ' + m.name + '.');
+            texts.push({ x: HX, y: 110, life: 2, s: 'REWARD UNLOCKED!', c: '#8ef0ff', center: true });
+          }
+        });
+        ui();
+      }
+      btnSell.addEventListener('click', () => sell(false));
+      btnRange.addEventListener('click', () => {
+        const c = RANGE_COST[rangeLv];
+        if (mode !== 'running' || !c || money < c) return;
+        money -= c; rangeLv++; say('Throw range is now ' + range() + ' m.'); ui();
+      });
+      btnCap.addEventListener('click', () => {
+        const c = CAP_COST[capLv];
+        if (mode !== 'running' || !c || money < c) return;
+        money -= c; capLv++; say('You can now pull out ' + capacity() + ' items at once.'); ui();
+      });
+      $('don-10').addEventListener('click', () => donate(10));
+      $('don-50').addEventListener('click', () => donate(50));
+      $('don-all').addEventListener('click', () => donate(money));
+
+      // ----- quiz (unlocks the next tool) -----
+      btnTool.addEventListener('click', openQuiz);
+      function openQuiz() {
+        if (mode !== 'running' || tier >= TOOLS.length - 1) return;
+        if (!qOrder.length) qOrder = shuffle(QUIZ.map((_, i) => i));
+        qCur = QUIZ[qOrder.pop()];
+        quizQ.textContent = qCur.q; quizHint.textContent = '';
+        quizOpts.innerHTML = '';
+        shuffle(qCur.a.map((_, i) => i)).forEach(i => {
+          const b = document.createElement('button');
+          b.type = 'button'; b.className = 'quiz-opt'; b.textContent = qCur.a[i]; b.dataset.ok = i === 0 ? '1' : '0';
+          quizOpts.appendChild(b);
+        });
+        quizClue.textContent = 'Use a clue (' + clues + ')'; quizClue.disabled = clues < 1;
+        mode = 'quiz'; quizEl.classList.remove('hidden');
+      }
+      function closeQuiz() { quizEl.classList.add('hidden'); if (mode === 'quiz') run(); }
+      quizOpts.addEventListener('click', e => {
+        const b = e.target.closest('.quiz-opt');
+        if (!b || b.disabled) return;
+        quizOpts.querySelectorAll('.quiz-opt').forEach(x => { x.disabled = true; });
+        if (b.dataset.ok === '1') {
+          b.classList.add('right'); tier++;
+          say('Correct! New tool: ' + TOOLS[tier].name + '.');
+          setTimeout(closeQuiz, 900);
+        } else {
+          b.classList.add('wrong'); quizOpts.querySelector('[data-ok="1"]').classList.add('right');
+          say('Not quite. You get a new question next time.');
+          setTimeout(closeQuiz, 1500);
+        }
+        ui();
+      });
+      quizClue.addEventListener('click', () => {
+        if (clues < 1) return;
+        clues--; quizHint.textContent = 'Clue: ' + qCur.h;
+        quizClue.disabled = true; quizClue.textContent = 'Use a clue (' + clues + ')'; ui();
+      });
+      quizCancel.addEventListener('click', closeQuiz);
+
+      // ----- throwing, catching, reeling -----
+      function throwAt(cx, cy) {
+        if (mode !== 'running' || hook) return;
+        let ty = clamp(cy, Y_FAR, Y_NEAR), d = yToD(ty);
+        const maxD = range() / 100;
+        if (d > maxD) { d = maxD; ty = dToY(d); say('Out of range! Upgrade your throw range.'); }
+        hook = { phase: 'throw', t: 0, dur: 0.38, tx: clamp(cx, 8, W - 8), ty: ty, tier: tier, caught: [] };
+      }
+      function land() {
+        const T = TOOLS[hook.tier], r = T.r;
+        const near = items.map(it => {
+          const p = proj(it.d, it.lat), dx = (p.x - hook.tx) / r, dy = (p.y - 4 - hook.ty) / (r * 0.5);
+          return { it: it, p: p, q: dx * dx + dy * dy };
+        }).filter(o => o.q <= 1 && it_ok(o.it, T));
+        near.sort((a, b) => a.q - b.q);
+        near.slice(0, capacity()).forEach(o => {
+          items.splice(items.indexOf(o.it), 1);
+          hook.caught.push({ it: o.it, x: o.p.x, y: o.p.y - 4 });
+        });
+        burst(hook.tx, hook.ty, ['#ffffff', '#9be8ff', '#3fa7e8'], 14, 70);
+        ripples.push({ x: hook.tx, y: hook.ty, r: r, life: 0.6, max: 0.6 });
+        if (!hook.caught.length) {
+          const sparkle = items.some(it => it.micro && Math.abs(proj(it.d, it.lat).x - hook.tx) < r);
+          say(sparkle && !T.micro ? 'Those tiny sparkles are microplastics. Unlock the Micro-filter to catch them.' : 'Missed! Aim at the floating trash.');
+        }
+      }
+      function it_ok(it, T) { return (!it.micro || T.micro) && it.d * 100 <= range() + 0.5; }
+      function addToBag(it) {
+        bagValue += it.v;
+        texts.push({ x: HX + (Math.random() - 0.5) * 60, y: 215, life: 0.9, s: '+$' + it.v, c: '#ffffff' });
+      }
+      function finishReel() {
+        let clue = false;
+        hook.caught.forEach(c => { addToBag(c.it); if (!clue && Math.random() < 0.08) clue = true; });
+        if (clue) { clues++; say('You found a clue in the trash! Use it in a quiz.'); texts.push({ x: HX, y: 190, life: 1.5, s: 'CLUE FOUND!', c: '#ffe14a', center: true }); }
+        else if (hook.caught.length) say('Pulled out ' + hook.caught.length + ' item' + (hook.caught.length > 1 ? 's' : '') + '. Sell your bag for money.');
+        hook = null;
+        ui();
+        checkWin();
+      }
+      function checkWin() { if (mode === 'running' && remaining() === 0 && !hook) endGame(); }
+
+      // ----- helpers: Finn (auto-sell) and Sally (auto-collect) -----
+      function addAnim(spr, x0, y0, x1, y1, dur, arc, onMid, onEnd) {
+        anims.push({ spr: spr, x0: x0, y0: y0, x1: x1, y1: y1, dur: dur, arc: arc, onMid: onMid, onEnd: onEnd, t: 0, mid: false });
+      }
+      function startFinn() { addAnim(DOLPHIN, -30, 175, W + 30, 175, 1.4, 55, () => sell(true), null); }
+      function startSally() {
+        const T = TOOLS[tier];
+        const target = items.filter(i => !i.micro || T.micro).sort((a, b) => a.d - b.d)[0];
+        if (!target) return;
+        const p = proj(target.d, target.lat);
+        addAnim(TURTLE, -20, 200, p.x, p.y - 2, 1.0, 12, null, () => {
+          const k = items.indexOf(target);
+          if (k < 0) return;
+          items.splice(k, 1); burst(p.x, p.y, ['#ffffff', '#9be8ff'], 10, 60); addToBag(target); ui(); checkWin();
+        });
+      }
+
+      function burst(x, y, cols, n, sp) {
+        for (let i = 0; i < n; i++) particles.push({ x: x, y: y, vx: (Math.random() - 0.5) * sp * 2, vy: (Math.random() - 0.9) * sp, life: 0.4 + Math.random() * 0.4, c: cols[i % cols.length] });
+      }
+
+      // ----- update -----
+      function update(dt) {
+        t += dt; uiT -= dt;
+        spawnT -= dt;
+        if (spawnT <= 0 && pool.length && items.length < MAX_ACTIVE) { spawnItem(pool.pop()); spawnT = 0.6; }
+        items.forEach(it => {
+          it.d = Math.max(0.06, it.d - 0.006 * dt); it.lat += it.vx * dt;
+          if (Math.abs(it.lat) > 0.95) it.vx = -it.vx;
+        });
+        if (hook) {
+          hook.t += dt;
+          if (hook.phase === 'throw' && hook.t >= hook.dur) { land(); hook.phase = 'reel'; hook.t = 0; hook.dur = TOOLS[hook.tier].reel; }
+          else if (hook.phase === 'reel' && hook.t >= hook.dur) finishReel();
+        }
+        if (perks.finn) { finnT -= dt; if (finnT <= 0) { finnT = 6; if (bagValue > 0) startFinn(); } }
+        if (perks.sally) { sallyT -= dt; if (sallyT <= 0) { sallyT = 3.5; startSally(); } }
+        for (let i = anims.length - 1; i >= 0; i--) {
+          const a = anims[i]; a.t += dt;
+          if (!a.mid && a.t >= a.dur / 2) { a.mid = true; if (a.onMid) a.onMid(); }
+          if (a.t >= a.dur) { if (a.onEnd) a.onEnd(); anims.splice(i, 1); }
+        }
+        for (let i = particles.length - 1; i >= 0; i--) {
+          const p = particles[i]; p.life -= dt; p.vy += 320 * dt; p.x += p.vx * dt; p.y += p.vy * dt;
+          if (p.life <= 0) particles.splice(i, 1);
+        }
+        for (let i = ripples.length - 1; i >= 0; i--) { ripples[i].life -= dt; if (ripples[i].life <= 0) ripples.splice(i, 1); }
+        for (let i = texts.length - 1; i >= 0; i--) { texts[i].life -= dt; texts[i].y -= 22 * dt; if (texts[i].life <= 0) texts.splice(i, 1); }
+        if (uiT <= 0) { uiT = 0.25; ui(); }
+      }
+
+      // ----- drawing -----
+      function drawSea() {
+        const SH = H - HOR;
+        for (let y = 0; y < SH; y += 2) {
+          const k = y / SH, ox = Math.sin(t * 0.9 + y * 0.09) * (0.8 + k * 3.2);
+          ctx.drawImage(seaTile, 0, y, W + 16, 2, Math.round(-8 + ox), HOR + y, W + 16, 2);
+        }
+        ctx.fillStyle = 'rgba(96,86,38,' + (0.32 * Math.min(1, remaining() / TOTAL)).toFixed(3) + ')';
+        ctx.fillRect(0, HOR, W, SH);
+        for (let i = 0; i < 18; i++) {
+          const wid = 4 + i * 1.3, x = 372 + Math.sin(t * 2 + i * 1.7) * (3 + i * 0.8);
+          ctx.globalAlpha = 0.25 + 0.35 * Math.abs(Math.sin(t * 1.5 + i));
+          R(x - wid / 2, HOR + 2 + i * 3, wid, 1, '#fffbe0');
+        }
+        ctx.globalAlpha = 1;
+      }
+      function drawItem(it) {
+        const p = proj(it.d, it.lat), s = p.s, bob = Math.round(Math.sin(t * 1.6 + it.ph));
+        if (it.micro) {
+          it.pts.forEach((q, i) => {
+            ctx.globalAlpha = 0.55 + 0.45 * Math.sin(t * 4 + i * 1.7 + it.ph);
+            R(p.x + q[0] * s, p.y - 3 * s + q[1] * s + bob, q[2] * s, q[2] * s, q[3]);
+          });
+          ctx.globalAlpha = 1;
+          return;
+        }
+        const sp = it.spr, sh = Math.floor(sp.height * 0.85), w = sp.width * s, h = sh * s;
+        R(p.x - w / 2 - 2, p.y, w + 4, 1, 'rgba(255,255,255,.35)');
+        R(p.x - w / 2, p.y + 1, w, 1, 'rgba(0,30,70,.3)');
+        ctx.drawImage(sp, 0, 0, sp.width, sh, Math.round(p.x - w / 2), Math.round(p.y - h + bob), w, h);
+      }
+      function drawCaught(it, x, y) {
+        if (it.micro) { it.pts.forEach(q => R(x + q[0] * 2, y + q[1] * 2, q[2] * 2, q[2] * 2, q[3])); return; }
+        const sp = it.spr;
+        ctx.drawImage(sp, Math.round(x - sp.width), Math.round(y - sp.height), sp.width * 2, sp.height * 2);
+      }
+      function drawHead(x, y, tr) {
+        const col = TOOLS[tr].col;
+        if (tr === 0) { R(x - 1, y - 2, 3, 10, col); R(x - 1, y - 4, 8, 2, col); R(x + 5, y - 4, 2, 7, col); R(x + 3, y + 1, 2, 2, col); return; }
+        const rr = 6 + tr * 1.5;
+        for (let a = 0; a < 16; a++) R(x + Math.cos(a / 16 * 6.283) * rr, y + Math.sin(a / 16 * 6.283) * rr * 0.6, 2, 2, col);
+        if (tr >= 2) { R(x - rr, y, rr * 2, 1, col); R(x, y - rr * 0.6, 1, rr * 1.2, col); }
+      }
+      function drawHands() {
+        R(HX - 34, 252, 26, 18, '#2a6fb5'); R(HX - 34, 252, 4, 18, '#1f5590');
+        R(HX + 8, 252, 26, 18, '#2a6fb5'); R(HX + 30, 252, 4, 18, '#1f5590');
+        if (!hook) { R(HX - 2, 218, 4, 36, '#a77b4a'); R(HX - 2, 218, 1, 36, '#c79a5b'); drawHead(HX, 214, tier); }
+        R(HX - 18, 242, 14, 12, '#f2c29b'); R(HX - 18, 242, 14, 3, '#d9a37a');
+        R(HX + 4, 242, 14, 12, '#f2c29b'); R(HX + 4, 242, 14, 3, '#d9a37a');
+      }
+      function label(s, x, y, col, center) {
+        ctx.textAlign = center ? 'center' : 'left';
+        ctx.fillStyle = '#0b1b33'; ctx.fillText(s, x + 1, y + 1);
+        ctx.fillStyle = col; ctx.fillText(s, x, y);
+      }
+      function draw() {
+        ctx.drawImage(skyImg, 0, 0);
+        clouds.forEach(c => ctx.drawImage(c.img, Math.round((c.x + t * c.v) % (W + 200)) - 120, c.y));
+        drawSea();
+        ctx.font = 'bold 10px monospace';
+
+        const yR = Math.round(dToY(range() / 100));
+        ctx.fillStyle = 'rgba(255,255,255,.4)';
+        for (let x = 0; x < W; x += 10) ctx.fillRect(x, yR, 5, 1);
+        label('RANGE ' + range() + ' m', 6, yR - 3, 'rgba(255,255,255,.8)');
+
+        items.slice().sort((a, b) => b.d - a.d).forEach(drawItem);
+
+        ripples.forEach(r => {
+          const u = 1 - r.life / r.max, rr = r.r * (0.4 + 0.6 * u);
+          ctx.globalAlpha = (1 - u) * 0.8;
+          for (let a = 0; a < 24; a++) R(r.x + Math.cos(a / 24 * 6.283) * rr, r.y + Math.sin(a / 24 * 6.283) * rr * 0.5, 2, 1, '#ffffff');
+        });
+        ctx.globalAlpha = 1;
+
+        if (mode === 'running' && !hook && aim) {
+          let ty = clamp(aim.y, Y_FAR, Y_NEAR);
+          const out = yToD(ty) * 100 > range();
+          if (out) ty = dToY(range() / 100);
+          const r = TOOLS[tier].r;
+          ctx.fillStyle = out ? 'rgba(255,120,110,.9)' : 'rgba(255,255,255,.85)';
+          for (let a = 0; a < 20; a++) ctx.fillRect(Math.round(aim.x + Math.cos(a / 20 * 6.283) * r), Math.round(ty + Math.sin(a / 20 * 6.283) * r * 0.5), 2, 1);
+        }
+
+        anims.forEach(a => {
+          const u = Math.min(1, a.t / a.dur), x = a.x0 + (a.x1 - a.x0) * u, y = a.y0 + (a.y1 - a.y0) * u - Math.sin(Math.PI * u) * a.arc;
+          const w = a.spr.width * 2, h = a.spr.height * 2;
+          ctx.drawImage(a.spr, Math.round(x - w / 2), Math.round(y - h), w, h);
+        });
+        particles.forEach(p => { ctx.globalAlpha = Math.min(1, p.life * 3); R(p.x, p.y, 2, 2, p.c); });
+        ctx.globalAlpha = 1;
+
+        if (hook) {
+          let px, py, u;
+          if (hook.phase === 'throw') {
+            u = hook.t / hook.dur;
+            px = HX + (hook.tx - HX) * u; py = (HY - 12) + (hook.ty - (HY - 12)) * u - Math.sin(Math.PI * u) * 46;
+          } else {
+            u = Math.min(1, hook.t / hook.dur);
+            px = hook.tx + (HX - hook.tx) * u; py = hook.ty + ((HY - 12) - hook.ty) * u - Math.sin(Math.PI * u) * 10;
+            hook.caught.forEach(c => drawCaught(c.it, c.x + (HX - c.x) * u, c.y + ((HY - 12) - c.y) * u - Math.sin(Math.PI * u) * 14));
+          }
+          for (let s = 0; s <= 22; s++) {
+            const v = s / 22;
+            R(HX + (px - HX) * v, (HY - 12) + (py - (HY - 12)) * v + Math.sin(Math.PI * v) * 6, 2, 1, '#e9dcb8');
+          }
+          drawHead(px, py, hook.tier);
+        }
+
+        ctx.drawImage(deckImg, 0, 222);
+        drawHands();
+        texts.forEach(tx => { ctx.globalAlpha = Math.min(1, tx.life * 2); label(tx.s, Math.round(tx.x), Math.round(tx.y), tx.c, tx.center); });
+        ctx.globalAlpha = 1;
+      }
+
+      // ----- loop, overlay, controls -----
+      function loop(ts) {
+        if (mode !== 'running') return;
+        const dt = Math.min(0.05, (ts - last) / 1000);
+        last = ts;
+        update(dt);
+        if (mode === 'running') { draw(); requestAnimationFrame(loop); }
+      }
+      function showOverlay(title, text, btn) {
+        ovTitle.textContent = title; ovText.textContent = text; startBtn.textContent = btn;
+        overlay.classList.remove('hidden');
+      }
+      function run() {
+        mode = 'running';
+        overlay.classList.add('hidden');
+        last = performance.now();
+        requestAnimationFrame(loop);
+      }
+      function endGame() {
+        mode = 'over';
+        ui(); draw();
+        showOverlay('The ocean is clean!', 'Every last piece is out of the water. You donated $' + donated + ' to the Clean Water Fund. Did you know? ' + facts[Math.floor(Math.random() * facts.length)], 'Play again');
+      }
+      function pause() {
+        if (mode !== 'running') return;
+        mode = 'paused';
+        showOverlay('Paused', 'Take a breath. The ocean is waiting for you.', 'Resume');
+      }
+      window.pauseGame = pause;
+
+      startBtn.addEventListener('click', (e) => {
+        e.stopPropagation();
+        if (mode === 'paused') { run(); return; }
+        reset();
+        run();
+      });
+
+      function pos(e) {
+        const r = canvas.getBoundingClientRect();
+        return { x: (e.clientX - r.left) * (W / r.width), y: (e.clientY - r.top) * (H / r.height) };
+      }
+      canvas.addEventListener('pointermove', (e) => { aim = pos(e); });
+      canvas.addEventListener('pointerleave', () => { aim = null; });
+      canvas.addEventListener('pointerdown', (e) => { aim = pos(e); throwAt(aim.x, aim.y); });
+
+      document.addEventListener('keydown', (e) => {
+        if (mode !== 'running') return;
+        if (e.key.toLowerCase() === 's') sell(false);
+        if (e.key === 'Escape') pause();
+      });
+      document.addEventListener('visibilitychange', () => { if (document.hidden) pause(); });
+
+      reset();
+      draw(); // first frame behind the start screen
+    })();
+
+    // ---------- TABS (the 5 sections, opened from the top menu) ----------
+    const tabIds = ['overview', 'improve', 'progress', 'gallery', 'game'];
+
+    function showTab(id, scroll) {
+      if (!tabIds.includes(id)) id = 'overview';
+      document.querySelectorAll('.panel').forEach(p => p.classList.toggle('active', p.id === 'panel-' + id));
+      document.querySelectorAll('.links a[data-tab]').forEach(a => a.classList.toggle('current', a.dataset.tab === id));
+      if (id !== 'game' && window.pauseGame) window.pauseGame();
+      closeZoom();
+      if (scroll) {
+        const top = document.querySelector('main').getBoundingClientRect().top + window.scrollY - 60;
+        window.scrollTo({ top: Math.max(0, top), behavior: 'smooth' });
+      }
+      try { history.replaceState(null, '', '#' + id); } catch (e) {}
+    }
+
+    document.querySelectorAll('[data-tab]').forEach(el => {
+      el.addEventListener('click', (e) => {
+        e.preventDefault();
+        e.stopPropagation();
+        showTab(el.dataset.tab, true);
+      });
+    });
+
+    window.addEventListener('hashchange', () => {
+      const id = location.hash.slice(1);
+      if (tabIds.includes(id)) showTab(id, true);
+    });
+
+    const startId = location.hash.slice(1);
+    showTab(tabIds.includes(startId) ? startId : 'overview', tabIds.includes(startId));
+  </script>
+</body>
+</html>
