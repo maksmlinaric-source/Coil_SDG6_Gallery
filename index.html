@@ -642,7 +642,7 @@
           s.y = s.by + Math.sin(t * 2 + s.ph) * 3;
           pour += s.rate;
         });
-        poll = Math.max(0, poll + (pour || -0.6) * dt);
+        poll = Math.max(0, poll + (pour || -2) * dt);
         if (poll >= 100) { poll = 100; updateHud(); endGame(false); return; }
 
         // water shots
