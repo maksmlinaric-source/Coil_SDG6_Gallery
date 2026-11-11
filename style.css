@@ -636,7 +636,3 @@ footer small { font-size: .8rem; opacity: .7; line-height: 1.5; }
 .quiz-actions { display: flex; gap: .6rem; }
 .btn.small { padding: .55rem 1.1rem; font-size: .9rem; }
 @media (max-width: 960px) { .shop { grid-template-columns: 1fr; } }
-
-.photo img[src*="20261014_183845"] {
-  transform: scale(0.94);
-}
